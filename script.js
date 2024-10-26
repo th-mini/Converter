@@ -87,7 +87,8 @@ function exportToWord() {
         a.click();
         URL.revokeObjectURL(url);
     } catch (error) {
-        console.error("Ошибка при экспорте в Word:", error);
-        alert("Произошла ошибка при экспорте в Word. Пожалуйста, проверьте, что таблица содержит данные.");
+        alert("Error Word:", error);
+
     }
 }
+

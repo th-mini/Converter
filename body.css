@@ -196,3 +196,56 @@ transition: bottom 0.5s;
         top: 100vh;
     }
   }
+
+
+
+#container {
+    display: flex;
+    gap: 20px;
+}
+#inputText {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
+}
+
+#inputText.blink {
+    background-color: #ffe57f; /* Цвет при блеске */
+}
+
+#output {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    height: 300px;
+}
+
+#container {
+    display: flex;
+    gap: 20px;
+}
+#inputText {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#inputText.dragover {
+    border-color: #007bff;
+    background-color: #e7f3ff; /* Цвет при перетаскивании */
+}
